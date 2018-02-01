@@ -23,4 +23,4 @@ This repo contains example apps using the Circuit JS SDK:
   npm run global     // to run Browser global app
 ```
 
-> The `client_id`'s in the examples are for the circuitsandbox and require the app to run on http://localhost:7000 as defined in `package.json`
+> The `client_id`'s in the examples are for the circuitsandbox and require the browser apps to run on http://localhost:7000 as defined in `package.json`
