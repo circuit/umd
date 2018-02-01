@@ -1,5 +1,7 @@
 # CommonJS, AMD and Browser (global) usage of circuit-sdk
 
+> circuit.js is included in this repo just until the umd-capable version is officially published to npm and unpkg
+
 As the repo indicates, the circuit-sdk is now available as UMD module, meaning it can be used as CommonJS or AMD module, and also still as browser global `Circuit` object.
 
 In addition the JS SDK and Node.js SDK now come in a single, common module, the`circuit.js` file.
