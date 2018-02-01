@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <button onclick="logon()">Logon</button>
+    <button onclick="logout()">Logout</button>
+    <div id="user"></div>
+    <script src="../circuit.js"></script>
+    <script>
+      let client = new Circuit.Client({
+        client_id: 'ebcf5281298a4f2fb1095ea58011d686',
+        domain: 'circuitsandbox.net'
+      });
+
+      function logon() {
+        client.logon()
+          .then(user => {
+            console.log('user', user);
+            document.querySelector('#user').innerHTML = `Logged on as ${user.displayName}`;
+          })
+          .catch(console.error);
+      }
+
+      function logout() {
+        client.logout()
+        .then(() => document.querySelector('#user').innerHTML = '')
+        .catch(console.error);
+      }
+    </script>
+  </body>
+</html>
