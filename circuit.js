@@ -38,11 +38,13 @@ var Circuit = {}; Object.defineProperty(Circuit, 'version', { value: '1.2.2800'}
 // Define external globals for JSHint
 /*global Buffer, clearInterval, clearTimeout, process, require, setInterval, setTimeout*/
 
-var window = Function('return this')();
+var global = Function('return this')();
+var window = global.window || global;
 var navigator = window.navigator || {};
 var document = window.document;
-var WebSocket = window.WebSocket;
-var XMLHttpRequest = window.XMLHttpRequest;
+var WebSocket = global.WebSocket;
+var XMLHttpRequest = global.XMLHttpRequest;
+var Promise = global.Promise;
 
 var Circuit = (function (circuit) {
     'use strict';
