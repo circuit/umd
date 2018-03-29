@@ -1,4 +1,4 @@
-const Circuit = require('../circuit.js');
+const Circuit = require('circuit-sdk');
 
 let client = new Circuit.Client({
   client_id: 'ebcf5281298a4f2fb1095ea58011d686',

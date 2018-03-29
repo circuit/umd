@@ -1,7 +1,7 @@
 require.config({
   paths: {
     'jquery': '//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min',
-    'circuit-sdk': '../circuit'
+    'circuit-sdk': '//unpkg.com/circuit-sdk/circuit'
   }
 });
 
