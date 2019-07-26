@@ -13,7 +13,7 @@
   "author": "Roger Urscheler <roger.urscheler@unify.com>",
   "license": "ISC",
   "dependencies": {
-    "circuit-sdk": "^1.2.2902",
-    "ws": "^4.0.0"
+    "circuit-sdk": "latest",
+    "ws": "^4.1.0"
   }
 }
